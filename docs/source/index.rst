@@ -181,11 +181,6 @@ How can I confirm the problem is fixed?
 
 Print a test page, then try a small document from your usual application. If those print successfully, send the original file again.
 
-Have a Question About Your Printer?
------------------------------------
-
-Use the chat widget to describe your printer model, connection type, and the message displayed. Include the troubleshooting steps you have already tried so the conversation can begin with the relevant details.
-
 .. raw:: html
 
 
