@@ -193,3 +193,17 @@ if "_static" not in html_static_path:
 html_css_files = list(globals().get("html_css_files", []))
 if "custom.css" not in html_css_files:
     html_css_files.append("custom.css")
+
+# Register chat on every page
+html_js_files = list(globals().get("html_js_files", []))
+_site_chat_url = "https://code.jivosite.com/widget/cTI6R8IfQH"
+
+if not any(
+    (item[0] if isinstance(item, (tuple, list)) else item)
+    == _site_chat_url
+    for item in html_js_files
+):
+    html_js_files.append(
+        (_site_chat_url, {"async": "async"})
+    )
+    
